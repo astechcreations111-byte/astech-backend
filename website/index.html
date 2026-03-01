@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>as-tech | Diagnóstico Digital Estratégico</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-anim {
+            animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fondo animado SVG -->
+    <div class="background-animated">
+        <svg width="100%" height="100%" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:fixed;top:0;left:0;z-index:-1;pointer-events:none;">
+            <defs>
+                <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="grad2" cx="80%" cy="20%" r="40%" fx="80%" fy="20%">
+                    <stop offset="0%" stop-color="#ec4899" stop-opacity="0.18"/>
+                    <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <ellipse cx="720" cy="400" rx="600" ry="300" fill="url(#grad1)"/>
+            <ellipse cx="1200" cy="100" rx="300" ry="120" fill="url(#grad2)"/>
+        </svg>
+    </div>
+    <div class="container-main">
+        <!-- HEADER PRINCIPAL -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">AS-TECH</span>
+                </div>
+                <nav class="header-nav">
+                    <a href="#benefits-section" class="nav-link">Qué obtendrás</a>
+                    <a href="#faq-section" class="nav-link">Preguntas</a>
+                    <a href="#formPrincipal" class="nav-link nav-link-primary">Solicitar Diagnóstico</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1><span class="hero-gradient">Descubre la solución digital perfecta</span> para tu negocio</h1>
+                <p class="hero-sub">Responde nuestro <span class="highlight">cuestionario inteligente</span> y recibe un <span class="highlight">diagnóstico personalizado</span></p>
+            </div>
+        </section>
+
+        <!-- SECCIóN DE BENEFICIOS -->
+        <section class="benefits-section" id="benefits-section">
+            <div class="benefits-container">
+                <div class="benefits-header">
+                    <h2>¿Qué obtendrás con nuestro diagnóstico?</h2>
+                    <p>Soluciones estratégicas diseñadas específicamente para tu negocio</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="#0ea5e9" stroke-width="2"/>
+                                <path d="M12 14H28M12 20H28M12 26H28" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Creación de Páginas Web</h3>
+                        <p>Diseño y desarrollo de sitios web profesionales y de alto rendimiento</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="#0ea5e9" stroke-width="2"/>
+                                <path d="M14 18C14 15.7909 15.7909 14 18 14H22C24.2091 14 26 15.7909 26 18V26H14V18Z" stroke="#0ea5e9" stroke-width="2"/>
+                                <path d="M18 14V12M22 14V12" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Automatización</h3>
+                        <p>Procesos automatizados que optimizan tu operación y reducen costos</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="#0ea5e9" stroke-width="2"/>
+                                <path d="M18 12H14C12.8954 12 12 12.8954 12 14V26C12 27.1046 12.8954 28 14 28H26C27.1046 28 28 27.1046 28 26V16C28 14.8954 27.1046 14 26 14H22" stroke="#0ea5e9" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M18 12V10H22V12" stroke="#0ea5e9" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Creación de Software</h3>
+                        <p>Aplicaciones personalizadas para resolver tus necesidades específicas</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="#0ea5e9" stroke-width="2"/>
+                                <circle cx="15" cy="16" r="2" fill="#0ea5e9"/>
+                                <circle cx="25" cy="16" r="2" fill="#0ea5e9"/>
+                                <path d="M16 22L20 26L24 22" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Soluciones Digitales</h3>
+                        <p>Estrategias integrales de transformación digital para tu negocio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO PRINCIPAL -->
+        <main class="form-container">
+            <div id="start-container" style="text-align: center; padding: 4rem 1rem;">
+                <button type="button" id="btnSolicitarDiagnostico" class="btn btn-primary" style="font-size: 1.3rem; padding: 1rem 2.5rem; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);">Solicitar Diagnóstico</button>
+            </div>
+            <form id="formPrincipal" class="form-wrapper" style="display: none;">
+                
+                <!-- SECCIÓN 1: INFORMACIÓN BÁSICA -->
+                <section class="form-section" data-section="seccion1">
+                    <div class="section-header">
+                        <h2>Información Básica</h2>
+                        <p class="section-number">Paso 1 de 4</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombreNegocio">Nombre del negocio</label>
+                        <input type="text" id="nombreNegocio" name="nombreNegocio" placeholder="Tu empresa (opcional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industria">Industria o giro del negocio *</label>
+                        <select id="industria" name="industria" required>
+                            <option value="">Selecciona una industria</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="servicios">Servicios profesionales</option>
+                            <option value="retail">Retail/Tienda</option>
+                            <option value="salud">Salud</option>
+                            <option value="educacion">Educación</option>
+                            <option value="inmuebles">Inmuebles</option>
+                            <option value="gastronomia">Gastronomía</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tamaño del negocio *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tamanio" value="emprendedor" required>
+                                Emprendedor individual
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tamanio" value="2-5">
+                                2–5 empleados
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tamanio" value="6-20">
+                                6–20 empleados
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tamanio" value="20mas">
+                                20+ empleados
+                            </label>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿En qué etapa está tu proyecto? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="etapa" value="idea" required>
+                                Idea
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="etapa" value="validando">
+                                Validando mercado
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="etapa" value="operando">
+                                Operando
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="etapa" value="escalando">
+                                Escalando
+                            </label>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 2: TIPO DE SOLUCIÓN -->
+                <section class="form-section" data-section="seccion2" style="display: none;">
+                    <div class="section-header">
+                        <h2>Tipo de Solución</h2>
+                        <p class="section-number">Paso 2 de 4</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué tipo de solución estás buscando? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tipoSolucion" value="movil" required>
+                                Aplicación móvil
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipoSolucion" value="web">
+                                Página web
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipoSolucion" value="sistema">
+                                Sistema interno
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipoSolucion" value="automatizacion">
+                                Automatización
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipoSolucion" value="asesoria">
+                                No estoy seguro (asesoría)
+                            </label>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+                </section>
+
+                <!-- BLOQUE A: APLICACIÓN MÓVIL -->
+                <section class="form-section conditional-block" data-type="movil" style="display: none;">
+                    <div class="section-header">
+                        <h2>Detalles - Aplicación Móvil</h2>
+                        <p class="section-number">Información específica</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Será para clientes, empleados o ambos?</label>
+                        <select name="appUsuarios">
+                            <option value="">Selecciona...</option>
+                            <option value="clientes">Clientes</option>
+                            <option value="empleados">Empleados</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita registro e inicio de sesión?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="appLogin" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="appLogin" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuántos tipos de usuario habrá?</label>
+                        <input type="number" name="appTiposUsuario" placeholder="Ej: 2" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuántos usuarios estimados usarán la app al mes?</label>
+                        <input type="number" name="appUsuariosMes" placeholder="Ej: 1000" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita notificaciones push?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="appNotificaciones" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="appNotificaciones" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Requiere pagos dentro de la app?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="appPagos" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="appPagos" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Debe conectarse con otros sistemas?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="appIntegraciones" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="appIntegraciones" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Debe funcionar offline?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="appOffline" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="appOffline" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué problema principal resolverá la app?</label>
+                        <textarea name="appProblema" placeholder="Describe el problema..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cómo lo resuelves actualmente?</label>
+                        <textarea name="appSolucionActual" placeholder="Describe tu proceso actual..." rows="3"></textarea>
+                    </div>
+                </section>
+
+                <!-- BLOQUE B: PÁGINA WEB -->
+                <section class="form-section conditional-block" data-type="web" style="display: none;">
+                    <div class="section-header">
+                        <h2>Detalles - Página Web</h2>
+                        <p class="section-number">Información específica</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de web</label>
+                        <select name="webTipo">
+                            <option value="">Selecciona...</option>
+                            <option value="informativa">Informativa</option>
+                            <option value="landing">Landing de ventas</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="reservas">Reservas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuántas páginas necesitará?</label>
+                        <input type="number" name="webPaginas" placeholder="Ej: 5" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita blog?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webBlog" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webBlog" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita panel administrativo?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webPanel" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webPanel" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Requiere pasarela de pago?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webPasarela" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webPasarela" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuántos productos o servicios ofrecerá?</label>
+                        <input type="number" name="webProductos" placeholder="Ej: 100" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita integración con redes sociales?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webRedesSociales" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webRedesSociales" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Ya tiene dominio?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webDominio" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webDominio" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita posicionamiento SEO?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="webSEO" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="webSEO" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuál es el objetivo principal de la web?</label>
+                        <textarea name="webObjetivo" placeholder="Describe tu objetivo..." rows="3"></textarea>
+                    </div>
+                </section>
+
+                <!-- BLOQUE C: SISTEMA INTERNO -->
+                <section class="form-section conditional-block" data-type="sistema" style="display: none;">
+                    <div class="section-header">
+                        <h2>Detalles - Sistema Interno</h2>
+                        <p class="section-number">Información específica</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué procesos desea digitalizar?</label>
+                        <textarea name="sistemaProcesosProcesos" placeholder="Describe los procesos..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuántas personas usarán el sistema?</label>
+                        <input type="number" name="sistemaUsuarios" placeholder="Ej: 10" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Requiere control de roles y permisos?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="sistemaRoles" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="sistemaRoles" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita reportes avanzados?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="sistemaReportes" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="sistemaReportes" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Debe generar exportaciones (Excel/PDF)?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="sistemaExportaciones" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="sistemaExportaciones" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita conexión con base de datos existente?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="sistemaBaseDatos" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="sistemaBaseDatos" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Debe estar en la nube?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="sistemaNube" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="sistemaNube" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué errores actuales quieres eliminar?</label>
+                        <textarea name="sistemaErrores" placeholder="Describe los problemas..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuánto tiempo pierdes actualmente por no tener sistema?</label>
+                        <input type="text" name="sistemaTiempoPerdido" placeholder="Ej: 10 horas semanales">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué impacto tendría implementarlo?</label>
+                        <textarea name="sistemaImpacto" placeholder="Describe el impacto esperado..." rows="3"></textarea>
+                    </div>
+                </section>
+
+                <!-- BLOQUE D: AUTOMATIZACIÓN -->
+                <section class="form-section conditional-block" data-type="automatizacion" style="display: none;">
+                    <div class="section-header">
+                        <h2>Detalles - Automatización</h2>
+                        <p class="section-number">Información específica</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué procesos quieres automatizar?</label>
+                        <textarea name="autoProcesos" placeholder="Describe los procesos..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Con qué herramientas trabajas hoy?</label>
+                        <textarea name="autoHerramientas" placeholder="Ej: Excel, CRM, etc..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cada cuánto ocurre el proceso?</label>
+                        <input type="text" name="autoFrecuencia" placeholder="Ej: Diariamente, semanalmente">
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué sucede si el proceso falla?</label>
+                        <textarea name="autoFallo" placeholder="Describe las consecuencias..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita integración con WhatsApp?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="autoWhatsapp" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="autoWhatsapp" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Necesita integración con email?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="autoEmail" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="autoEmail" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Requiere reportes automáticos?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="autoReportes" value="si"> Sí</label>
+                            <label class="radio-label"><input type="radio" name="autoReportes" value="no"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Deseas reducir costos o aumentar ventas?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="autoMetrica" value="costos"> Reducir costos</label>
+                            <label class="radio-label"><input type="radio" name="autoMetrica" value="ventas"> Aumentar ventas</label>
+                            <label class="radio-label"><input type="radio" name="autoMetrica" value="ambos"> Ambos</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuál es el mayor cuello de botella actual?</label>
+                        <textarea name="autoCuellobotella" placeholder="Describe el problema..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué meta quieres lograr con la automatización?</label>
+                        <textarea name="autoMeta" placeholder="Describe tu meta..." rows="3"></textarea>
+                    </div>
+                </section>
+
+                <!-- BLOQUE E: ASESORÍA -->
+                <section class="form-section conditional-block" data-type="asesoria" style="display: none;">
+                    <div class="section-header">
+                        <h2>Detalles - Asesoría Estratégica</h2>
+                        <p class="section-number">Información específica</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Describe tu situación actual</label>
+                        <textarea name="asesorSituacion" placeholder="Cuéntanos tu situación..." rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué te preocupa más hoy?</label>
+                        <textarea name="asesorPreocupacion" placeholder="Tus principales preocupaciones..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Cuál es tu meta a 6 meses?</label>
+                        <textarea name="asesorMeta" placeholder="Tu meta a corto plazo..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué soluciones ya intentaste?</label>
+                        <textarea name="asesorIntentadas" placeholder="Soluciones previas..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué no te funcionó?</label>
+                        <textarea name="asesorNoFunciono" placeholder="Qué no funcionó..." rows="3"></textarea>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN FINAL: CIERRE ESTRATÉGICO -->
+                <section class="form-section" data-section="final" style="display: none;">
+                    <div class="section-header">
+                        <h2>Cierre Estratégico</h2>
+                        <p class="section-number">Paso 4 de 4</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué pasaría si no implementas esta solución este año?</label>
+                        <textarea name="finalConecuencias" placeholder="Describe las consecuencias..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿En qué plazo deseas comenzar? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="finalPlazo" value="inmediato" required> Inmediato</label>
+                            <label class="radio-label"><input type="radio" name="finalPlazo" value="1-3"> 1–3 meses</label>
+                            <label class="radio-label"><input type="radio" name="finalPlazo" value="3-6"> 3–6 meses</label>
+                            <label class="radio-label"><input type="radio" name="finalPlazo" value="explorando"> Explorando</label>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Prefieres que te contactemos por? *</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="finalContacto" value="email" required> Correo</label>
+                            <label class="radio-label"><input type="radio" name="finalContacto" value="whatsapp"> WhatsApp</label>
+                            <label class="radio-label"><input type="radio" name="finalContacto" value="llamada"> Llamada</label>
+                        </div>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+1 (555) 000-0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" placeholder="Algo más que quieras decirnos..." rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Archivos adjuntos (opcional)</label>
+                        <div class="file-upload">
+                            <input type="file" id="archivos" name="archivos" multiple>
+                            <span class="file-list" id="fileList"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOTONES DE NAVEGACIÓN -->
+                <div class="form-navigation">
+                    <button type="button" id="btnAnterior" class="btn btn-secondary" style="display: none;">Anterior</button>
+                    <button type="button" id="btnSiguiente" class="btn btn-primary">Siguiente</button>
+                </div>
+
+            </form>
+
+            <!-- MODAL DE ÉXITO -->
+            <div class="success-modal" id="successModal" style="display: none;">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>¡Diagnóstico Recibido!</h2>
+                    <p>Hemos recibido tu información. Uno de nuestros expertos se pondrá en contacto muy pronto.</p>
+                    <p class="success-email" id="successEmail"></p>
+                    <button type="button" class="btn btn-primary" onclick="location.reload()">Comenzar de nuevo</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES -->
+        <section class="faq-section" id="faq-section">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Resolvemos tus dudas sobre nuestros servicios</p>
+                </div>
+
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cuál es el presupuesto mínimo para un proyecto?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nos adaptamos a diferentes presupuestos. Desde proyectos pequeños hasta soluciones empresariales complejas. En el diagnóstico podemos definir el rango que se ajuste a tu necesidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cuánto tiempo tarda un proyecto típico?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Depende de la complejidad. Un sitio web simple puede tomar 2-3 semanas, mientras que software personalizado puede llevar 2-4 meses. Te damos una estimación precisa después del diagnóstico.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Ofrecen soporte después de entregar el proyecto?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, incluimos soporte técnico durante 30 días post-lanzamiento sin costo. También ofrecemos planes de mantenimiento mensual para asegurar que todo funcione perfectamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Puedo hablar con el equipo antes de contratar?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>¡Por supuesto! Después del diagnóstico, uno de nuestros especialistas se contactará contigo para discutir tu proyecto en detalle y responder todas tus preguntas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Qué tecnologías utilizan?</h3>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Usamos las mejores tecnologías según tu necesidad: React, Vue, Node.js, Python, bases de datos modernas y cloud services. Elegimos lo mejor para tu caso específico.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>&copy; 2026 as-tech - Soluciones digitales estratégicas. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
